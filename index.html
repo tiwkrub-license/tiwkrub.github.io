@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiwKrub Team - พื้นที่สร้างสรรค์โค้ดและโปรเจกต์ไอที</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
+        .code-font {
+            font-family: 'Fira Code', monospace;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px rgba(59, 130, 246, 0.25);
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #60A5FA 0%, #A855F7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen flex flex-col justify-between selection:bg-blue-600 selection:text-white">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-gray-800/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-blue-600 to-purple-600 flex items-center justify-center font-bold text-lg text-white shadow-lg">
+                        T
+                    </div>
+                    <span class="font-bold text-xl tracking-wide gradient-text">TiwKrub Team</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-gray-300">
+                    <a href="#about" class="hover:text-blue-400 transition-colors">เกี่ยวกับเรา</a>
+                    <a href="#projects" class="hover:text-blue-400 transition-colors">ผลงานโปรเจกต์</a>
+                    <a href="#members" class="hover:text-blue-400 transition-colors">สมาชิกในทีม</a>
+                    <a href="#stack" class="hover:text-blue-400 transition-colors">เทคโนโลยีที่ใช้</a>
+                </div>
+
+                <div>
+                    <a href="#projects" class="px-4 py-2 text-xs sm:text-sm font-medium bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-all duration-200 shadow-md hover:shadow-blue-500/20">
+                        ดูโปรเจกต์
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 md:pt-40 md:pb-28 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative overflow-hidden">
+        <div class="absolute inset-0 -z-10 flex items-center justify-center">
+            <div class="w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-3xl"></div>
+            <div class="w-[300px] h-[300px] bg-purple-600/10 rounded-full blur-3xl -ml-32"></div>
+        </div>
+
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-950/60 border border-blue-800/50 text-blue-300 text-xs sm:text-sm font-medium mb-6">
+            <span class="flex h-2 w-2 rounded-full bg-blue-400 animate-ping"></span>
+            ทีมพัฒนาระดับมัธยม & โปรเจกต์โอเพ่นซอร์ส
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+            รวมพลังคิด โค้ด และ <br class="hidden sm:inline" />
+            <span class="gradient-text">สร้างสรรค์สิ่งใหม่ร่วมกัน</span>
+        </h1>
+
+        <p class="max-w-2xl mx-auto text-gray-400 text-base sm:text-lg mb-8 leading-relaxed font-light">
+            กลุ่มเพื่อนนักเรียนสายเขียนโปรแกรมที่หลงใหลในการพัฒนาซอฟต์แวร์ เว็บไซต์ และแอปพลิเคชัน เพื่อเรียนรู้และสร้างโปรเจกต์จริงไปด้วยกัน
+        </p>
+
+        <div class="max-w-xl mx-auto bg-gray-900 border border-gray-800 rounded-xl p-4 text-left shadow-2xl code-font text-xs sm:text-sm glow-effect">
+            <div class="flex items-center gap-2 mb-3 pb-2 border-b border-gray-800">
+                <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                <span class="text-xs text-gray-500 ml-2">tiwkrub-team.config.js</span>
+            </div>
+            <p class="text-purple-400"><span class="text-blue-400">const</span> team = {</p>
+            <p class="pl-4 text-gray-300">name: <span class="text-emerald-400">'TiwKrub Team'</span>,</p>
+            <p class="pl-4 text-gray-300">passion: <span class="text-emerald-400">'Coding & Innovation'</span>,</p>
+            <p class="pl-4 text-gray-300">members: [<span class="text-emerald-400">'Tiw'</span>, <span class="text-emerald-400">'Friends'</span>],</p>
+            <p class="pl-4 text-gray-300">status: <span class="text-amber-400">'Always Building 🚀'</span></p>
+            <p class="text-purple-400">};</p>
+        </div>
+    </header>
+
+    <section id="about" class="py-16 bg-gray-900/50 border-y border-gray-800/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-blue-500/40 transition-colors">
+                    <div class="w-12 h-12 bg-blue-900/40 border border-blue-700/50 text-blue-400 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">เรียนรู้ผ่านการทำจริง</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        พวกเราเน้นศึกษาเทคโนโลยีใหม่ๆ ด้วยการลงมือเขียนโค้ดทำโปรเจกต์จริง ไม่ว่าจะเป็น Web Application, AI หรือระบบ Automation
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-purple-500/40 transition-colors">
+                    <div class="w-12 h-12 bg-purple-900/40 border border-purple-700/50 text-purple-400 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">ทำงานเป็นทีม</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        ใช้ระบบ Git & GitHub ในการแชร์โค้ด ทบทวนเนื้อหา และแบ่งหน้าที่เพื่อพัฒนาทักษะการทำงานร่วมกันแบบนักพัฒนามืออาชีพ
+                    </p>
+                </div>
+
+                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-emerald-500/40 transition-colors">
+                    <div class="w-12 h-12 bg-emerald-900/40 border border-emerald-700/50 text-emerald-400 rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">ต่อยอดไร้ขีดจำกัด</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        มุ่งมั่นพัฒนาเครื่องมือที่นำไปใช้งานได้จริงในชีวิตประจำวัน ช่วยเหลืองานในโรงเรียน หรือส่งเข้าแข่งขันในเวทีต่างๆ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-3">ผลงานและโปรเจกต์</h2>
+            <p class="text-gray-400 text-sm sm:text-base">ส่วนหนึ่งของซอฟต์แวร์และแอปพลิเคชันที่พวกเราช่วยกันพัฒนา</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project Card 1 -->
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-blue-500/50 transition-all duration-300 glow-hover flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="px-2.5 py-1 bg-blue-950 text-blue-300 text-xs font-medium rounded-md border border-blue-800">Web App</span>
+                        <div class="flex gap-3 text-gray-400 text-lg">
+                            <a href="#" class="hover:text-white transition-colors" title="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="hover:text-white transition-colors" title="Live Preview"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">School Tools & Utility Hub</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        เว็บแอปพลิเคชันรวมเครื่องมือช่วยเหลือการเรียน จัดตารางเรียน และคำนวณเกรดเฉลี่ยสำหรับเพื่อนๆ นักเรียน
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-800 text-xs code-font text-gray-400">
+                    <span class="px-2 py-1 bg-gray-800 rounded">HTML/CSS</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded">JavaScript</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded">Tailwind</span>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 hover:border-purple-500/50 transition-all duration-300 glow-hover flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="px-2.5 py-1 bg-purple-950 text-purple-300 text-xs font-medium rounded-md border border-purple-800">Bot & Automation</span>
+                        <div class="flex gap-3 text-gray-400 text-lg">
+                            <a href="#" class="hover:text-white transition-colors" title="GitHub Repo"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Discord Helper Bot</h3>
+                    <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+                        บอทประจำ Discord สำหรับแจ้งเตือนการบ้าน ส่งการแจ้งเตือนข่าวสารในกลุ่มเรียน และเปิดเพลงผ่อนคลาย
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 pt-4 border-t border-gray-800 text-xs code-font text-gray-400">
+                    <span class="px-2 py-1 bg-gray-800 rounded">Node.js</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded">Discord.js</span>
+                    <span class="px-2 py-1 bg-gray-800 rounded">Python</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="members" class="py-20 bg-gray-900/30 border-t border-gray-800/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-3">สมาชิกในทีม</h2>
+                <p class="text-gray-400 text-sm sm:text-base">ผู้อยู่เบื้องหลังการพัฒนาและสร้างสรรค์โปรเจกต์ของ TiwKrub Team</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Member 1 -->
+                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 text-center hover:border-gray-700 transition-colors">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600 flex items-center justify-center text-2xl font-bold text-white shadow-md">
+                        TK
+                    </div>
+                    <h3 class="text-lg font-bold text-white">TiwKrub</h3>
+                    <p class="text-xs text-blue-400 font-medium mb-3">Team Lead & Developer</p>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-4">
+                        ดูแลภาพรวมโปรเจกต์ ถนัดการเขียน Web Development และจัดการระบบหลังบ้าน
+                    </p>
+                    <div class="flex justify-center gap-3 text-gray-400 text-sm">
+                        <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="hover:text-white transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 text-center hover:border-gray-700 transition-colors">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-tr from-purple-500 to-pink-600 flex items-center justify-center text-2xl font-bold text-white shadow-md">
+                        DEV
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Member</h3>
+                    <p class="text-xs text-purple-400 font-medium mb-3">Frontend & UI Design</p>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-4">
+                        รับผิดชอบเรื่องความสวยงาม ตกแต่งหน้าเว็บ และออกแบบประสบการณ์ใช้งานของผู้ใช้
+                    </p>
+                    <div class="flex justify-center gap-3 text-gray-400 text-sm">
+                        <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6 text-center hover:border-gray-700 transition-colors">
+                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-600 flex items-center justify-center text-2xl font-bold text-white shadow-md">
+                        CODE
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Member</h3>
+                    <p class="text-xs text-emerald-400 font-medium mb-3">Logic & Algorithm</p>
+                    <p class="text-gray-400 text-xs leading-relaxed mb-4">
+                        เน้นการแก้โจทย์ ปรับแต่งโครงสร้างข้อมูล และช่วยเขียนฟังก์ชันการทำงานต่างๆ
+                    </p>
+                    <div class="flex justify-center gap-3 text-gray-400 text-sm">
+                        <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-8">เทคโนโลยีที่พวกเราเลือกใช้</h2>
+        <div class="flex flex-wrap justify-center gap-6 opacity-80 text-3xl sm:text-4xl text-gray-400">
+            <i class="fa-brands fa-html5 hover:text-orange-500 transition-colors" title="HTML5"></i>
+            <i class="fa-brands fa-css3-alt hover:text-blue-500 transition-colors" title="CSS3"></i>
+            <i class="fa-brands fa-js hover:text-yellow-400 transition-colors" title="JavaScript"></i>
+            <i class="fa-brands fa-python hover:text-blue-400 transition-colors" title="Python"></i>
+            <i class="fa-brands fa-node-js hover:text-green-500 transition-colors" title="Node.js"></i>
+            <i class="fa-brands fa-git-alt hover:text-red-500 transition-colors" title="Git"></i>
+            <i class="fa-brands fa-github hover:text-white transition-colors" title="GitHub"></i>
+        </div>
+    </section>
+
+    <footer class="bg-gray-950 border-t border-gray-800/80 py-10 text-center text-gray-500 text-xs sm:text-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-gray-300">TiwKrub Team</span>
+                <span>— สร้างสรรค์ด้วยความชอบโดยกลุ่มนักเรียน</span>
+            </div>
+            <p class="code-font text-gray-600">
+                &copy; 2026 TiwKrub Team. Hosted on GitHub Pages.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
